@@ -6,7 +6,7 @@ class Persons extends Component {
     super(props);
     // TODO: endpoint should be abstracted into a config variable
     // Change localhost:5000 to 30001 for deployment
-    this.endpoint_url = "http://localhost:5000/api/persons";
+    this.endpoint_url = "http://localhost:30001/api/persons";
     this.state = {
       persons: [],
       display: null,
