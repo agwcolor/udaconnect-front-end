@@ -5,8 +5,10 @@ class Persons extends Component {
   constructor(props) {
     super(props);
     // TODO: endpoint should be abstracted into a config variable
-    // Change localhost:5000 to 30001 for deployment
-    this.endpoint_url = "http://localhost:30001/api/persons";
+    // Use localhost:5000 to run locally not in a docker container
+    // Use localhost: 30001 in docker to test api already on kubernetes
+    // Use http://10.43.240.203:5000 when deployed
+    this.endpoint_url = "http://10.43.240.203:5000/api/persons";
     this.state = {
       persons: [],
       display: null,
