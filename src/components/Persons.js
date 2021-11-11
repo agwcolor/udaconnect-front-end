@@ -8,7 +8,7 @@ class Persons extends Component {
     // Use localhost:5000 to run locally not in a docker container
     // Use localhost: 30001 in docker to test api already on kubernetes
     // Use http://10.43.240.203:5000 when deployed
-    this.endpoint_url = "http://10.42.0.36:5000/api/persons";
+    this.endpoint_url = "http://10.43.240.203:5000/api/persons";
     this.state = {
       persons: [],
       display: null,
