@@ -23,9 +23,9 @@ class Connection extends Component {
       // TODO: endpoint should be abstracted into a config variable
       // use localhost:5002 running locally, not in a container
       // use localhost:30003 to connect to kubernetes from outside
-      // use 10.43.255.199:5005  (service ip + grpc server port - not actually implemented here from front end. Please use writer.py to test
+      // use 10.42.0.34:5005  (service ip + grpc server port - not actually implemented here from front end. Please use writer.py to test
       fetch(
-        `http://10.42.0.12:5005/api/persons/${personId}/connection?start_date=2020-01-01&end_date=2020-12-30&distance=5`
+        `http://10.42.0.34:5005/api/persons/${personId}/connection?start_date=2020-01-01&end_date=2020-12-30&distance=5`
       )
         .then((response) => response.json())
         .then((connections) =>
